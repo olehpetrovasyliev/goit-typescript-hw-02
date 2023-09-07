@@ -13,7 +13,7 @@ enum Weekday {
   SUN,
 }
 
-const isWeeend = (day: Weekday) => {
+const isWeekend = (day: Weekday): string => {
   if (day === Weekday.SAT || Weekday.SUN) {
     return "THIS IS WEEKEND";
   }
