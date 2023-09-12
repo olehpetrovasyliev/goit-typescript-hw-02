@@ -2,13 +2,17 @@
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
 type IsOpen = "open" | "close";
+type Details = {
+  createAt: Date;
+  updateAt: Date;
+};
 
 type Page = {
   title: string;
   likes: number;
   accounts: string[];
   status: IsOpen;
-  details?: {};
+  details?: Details;
 };
 const page1: Page = {
   title: "The awesome page",
